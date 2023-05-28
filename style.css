@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #14a1f3;
+    min-height: 100vh;
+}
+.content{
+    width: 700px;
+    text-align: center;
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 7px;
+}
+.content .first-content .quote-content{
+    display: flex;
+    margin-top: 40px;
+}
+.quote-content i:first-child{
+    margin: 3px 10px 0 0;
+}
+.quote-content i:last-child{
+    display: flex;
+    align-items: flex-end;
+    margin: 0 0 3px 10px;
+}
+.content .first-content .authors{
+    font-size: 25px;
+    padding: 20px 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: end;
+}
+.content .second-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}.content .second-content .icons{
+    display: flex;
+    align-items: center;
+}.content .second-content .icons i{
+    border: 2px solid #14a1f3;
+    font-size: 22px;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 0 10px;
+    color: #14a1f3;
+    cursor: pointer;
+    transition: 0.3s;
+}.content .second-content .icons i:hover{
+    background-color: #14a1f3;
+    color: white;
+}
+.content .second-content button{
+    padding: 10px 25px;
+    border-radius: 30px;
+    border: none;
+    border: 2px solid #14a1f3;
+    background-color: white;
+    color: #14a1f3;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3;
+}.content .second-content button:hover{
+    background-color: #14a1f3;
+    color: white;
+}
+
+@media screen and (max-width: 720px) {
+    .content{
+        width: 550px;
+    }
+}
+@media screen and (max-width: 650px) {
+    .content{
+        width: 500px;
+    }
+}
